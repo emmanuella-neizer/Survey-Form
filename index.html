@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <header class="header">
+      <h3 id="title">User Survey form</h3>
+      <p id="description" class="descriptive-text">
+        Thank you for taking the time to help us improve this platform.
+        We would like to know a little more about your experience with the course.
+      </p>
+    </header>
+
+    <div class="main-content">
+
+      
+
+      <div class="column-image">
+        <div id="image-div">
+          <img src="./image/survey.jpg" alt="Survey form icon">
+        </div>
+    </div>
+
+
+    <form class="form" id="survey-form">
+      <div class="box-info">
+        <label id="name-label" for="name">First Name: </label>
+        <input
+        class="fullname"
+        id="name"
+        type="text" 
+        placeholder="Enter your name"
+        required
+        />
+      </div>
+
+      <div class="box-info">
+        <label id="email-label" for="email">Email: </label>
+        <input 
+        class="fieldemail"
+         type="text" 
+         placeholder="Enter your Email" 
+         required/>
+      </div>
+
+      <div class="box-info">
+        <label id="age-label" for="age">Age: </label>
+        <input 
+        class="fieldage"
+         type="number" 
+         id="number"
+         min="10"
+         max="99"
+         placeholder="Age" 
+         required/>
+      </div>
+
+      <div class="box-info">
+        <label for="dropdown" name="mile">Employment Status: </label>
+        <select id="dropdown" name="mile" class="form-control" required>
+          <option disabled selected value>Select your current status</option>
+          <option value="student">Student</option>
+          <option value="job-full">Employed Full Time</option>
+          <option value="job-part">Employed Part Time</option>
+          <option value="self-employed">Self-employed</option>
+          <option value="unemployed">Unemployed</option>
+          <option value="retired">Retired</option>
+          <option value="preferNo">Prefer not to say</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      
+          <div class="box-info">
+        <label for="experience-dropdown" name="experience ">Experience Level: </label>
+        <select id="experience-dropdown" name="experience" class="form-control" required>
+          <option disabled selected value>Select your relevant experience level</option>
+          <option value="junior">Junior (0-2 years experience)</option>
+          <option value="mid">Mid-level (2+ years experience)</option>
+          <option value="senior">Senior</option>
+          <option value="executive">Executive</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+  
+        <p>Overall, how would you rate the course?</p>
+          <input
+          name="user-rate"
+          value="excellent"
+          type="radio"
+          class="input-radio"
+          checked>
+          <label class="remark-label">Excellent</label>
+          <!-- <span>Excellent</span> -->
+          <br/>
+  
+        
+          <input
+          name="user-rate"
+          value="very-good"
+          type="radio"
+          class="input-radio"/>
+          <label class="remark-label">Very good</label>
+          <!-- <span>Very Good</span> -->
+          <br/>
+  
+  
+    <input
+      name="user-rate"
+      value="good"
+      type="radio"
+      class="input-radio"/>
+     <label class="remark-label">Good</label>
+      <!-- <span>Good</span> -->
+     <br/>
+  
+    <input
+      name="user-rate"
+      value="fair"
+      type="radio"
+      class="input-radio"/>
+    <label class="remark-label">Fair</label>
+    <!-- <span>Fair</span> -->
+    <br/>
+  
+    <input
+      name="user-rate"
+      value="poor"
+      type="radio"
+      class="input-radio"/>
+    <label class="remark-label">Poor</label>
+    <!-- <span>Poor</span> -->
+    <br/>
+
+    <p>How useful were the course materials (readings, videos, assignments, etc)?</p>
+  
+    <input
+      name="materials-rate"
+      value="extremely"
+      type="radio"
+      class="input-radio"
+      checked/>
+     <label class="remark-label">Extremely useful</label>
+     <!-- <span>Extremely useful</span> -->
+     <br/>
+   
+    <input
+      name="materials-rate"
+      value="very"
+      type="radio"
+      class="input-radio"/> 
+      <label class="remark-label">Very useful</label>
+    <!-- <span>Very useful</span> -->
+    <br/>
+  
+    <input
+      name="materials-rate"
+      value="somewhat"
+      type="radio"
+      class="input-radio"/> 
+      <label class="remark-label">Somewhat useful</label>
+    <!-- <span>Somewhat useful</span> -->
+    <br/>
+  
+    <input
+      name="materials-rate"
+      value="not-so"
+      type="radio"
+      class="input-radio"/>
+     <label class="remark-label">Not so useful</label>
+     <!-- <span>Not so useful</span> -->
+     <br/>
+  
+    <input
+      name="materials-rate"
+      value="no"
+      type="radio"
+      class="input-radio"/> 
+     <label class="remark-label">No useful at all</label>
+     <!-- <span>No useful at all</span> -->
+     <br/>
+
+     <p>Would you recommend the course to a friend?</p>
+  
+    <input
+      name="user-recommend"
+      value="definitely"
+      type="radio"
+      class="input-radio"
+      checked/>
+      <label class="remark-label">Definitely</label>
+     <!-- <span>Definitely</span> -->
+     <br/>
+  
+    <input
+      name="user-recommend"
+      value="maybe"
+      type="radio"
+      class="input-radio"/>
+     <label class="remark-label">Maybe</label>
+     <!-- <span>Maybe</span> -->
+     <br/>
+  
+    <input
+      name="user-recommend"
+      value="not-sure"
+      type="radio"
+      class="input-radio"/>
+      <label class="remark-label">Not sure</label>
+     <!-- <span>Not sure</span> -->
+     <br/>
+
+
+   <p>
+    What would you like to see improved? (Check all that apply)
+   </p>
+
+
+    <input
+      name="prefer"
+      value="lectures"
+      type="checkbox"
+      class="input-checkbox"/>  
+      <label class="remark-label">Lectures and videos</label>
+     <!-- <span>Lectures and videos</span> -->
+     <br/>
+ 
+    <input
+      name="prefer"
+      value="material"
+      type="checkbox"
+      class="input-checkbox"/>
+      <label class="remark-label">Instructional materials i.e. readings</label>
+      <!-- <span>Instructional materials i.e. readings</span> -->
+      <br/>
+  
+    <input
+      name="prefer"
+      value="assignments"
+      type="checkbox"
+      class="input-checkbox"/> 
+      <label class="remark-label">Course assignments and projects</label>
+     <!-- <span>Course assignments and projects</span> -->
+     <br/>
+  
+    <input
+      name="prefer"
+      value="exams"
+      type="checkbox"
+      class="input-checkbox"/>
+     <label class="remark-label">Graded assignments and exams</label>
+     <!-- <span>Graded assignments and exams</span> -->
+     <br/>
+  
+    <input
+      name="prefer"
+      value="forum"
+      type="checkbox"
+      class="input-checkbox"/>
+     <label class="remark-label">Forum</label>
+     <!-- <span>Forum</span> -->
+     <br/>
+    
+    <input
+      name="prefer"
+      value="additional-courses"
+      type="checkbox"
+      class="input-checkbox"/>
+     <label class="remark-label">Additional Courses</label>
+     <!-- <span>Additional Courses</span> -->
+     <br/>
+
+   <div>
+    <p>Any comments or suggestions?</p>
+   <textarea
+    id="comments"
+    class="input-textarea"
+    name="comment"
+    placeholder="Enter your comment here...">
+   </textarea>
+   </div>
+
+         
+  
+ 
+
+      <input class="button" type="submit" value="Submit">
+    </form>
+  </div>
+
+</body>
+</html>
+
+  
+
+ 
+
